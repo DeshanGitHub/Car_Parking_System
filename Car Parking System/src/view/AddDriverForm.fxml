@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="715.0" prefWidth="1243.0" style="-fx-background-color: #273c75;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <TableView fx:id="tblDrivers" layoutX="14.0" layoutY="192.0" prefHeight="513.0" prefWidth="1243.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="202.0">
+        <columns>
+          <TableColumn fx:id="colDriverName" prefWidth="262.0" text="Driver Name" />
+          <TableColumn fx:id="colNIC" minWidth="0.0" prefWidth="201.0" text="NIC" />
+            <TableColumn fx:id="colDrivingLicenseNo" prefWidth="195.0" text="Driving License No." />
+            <TableColumn fx:id="colAddress" prefWidth="285.0" text="Address" />
+            <TableColumn fx:id="colContactNo" prefWidth="167.0" text="Contact No" />
+            <TableColumn fx:id="colDelete" prefWidth="132.0" text="Delete" />
+
+        </columns>
+      </TableView>
+      <Label layoutX="123.0" layoutY="26.0" text="Driver Form" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="303.0" layoutY="44.0" prefHeight="3.0" prefWidth="912.0" />
+      <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="14.0" layoutY="27.0" onAction="#openManagementWindowFormOnAction" prefHeight="36.0" prefWidth="89.0" style="-fx-background-color: #ffd32a;" text="Back">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtDriverName" focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="118.0" prefHeight="31.0" prefWidth="202.0" promptText="Driver Name" style="-fx-background-color: white;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtNIC" focusColor="WHITE" labelFloat="true" layoutX="232.0" layoutY="118.0" prefHeight="31.0" prefWidth="186.0" promptText="NIC" style="-fx-background-color: white;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtDriverLicenseNo" focusColor="WHITE" labelFloat="true" layoutX="434.0" layoutY="118.0" prefHeight="31.0" prefWidth="186.0" promptText="Driving License No." style="-fx-background-color: white;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtAddress" focusColor="WHITE" labelFloat="true" layoutX="637.0" layoutY="118.0" prefHeight="31.0" prefWidth="218.0" promptText="Address" style="-fx-background-color: white;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtContactNo" focusColor="WHITE" labelFloat="true" layoutX="871.0" layoutY="118.0" prefHeight="31.0" prefWidth="218.0" promptText="Contact No." style="-fx-background-color: white;" unFocusColor="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="1120.0" layoutY="111.0" onAction="#saveUpdateOnAction" prefHeight="45.0" prefWidth="114.0" style="-fx-background-color: #2ed573;" text="Save">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
