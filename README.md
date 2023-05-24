@@ -21,6 +21,6 @@ This project is built to practice Java OOP concepts and improve problem solving 
 
 #### Architectures
 
-• MVC Architectures <br>
+• MVC Architecture <br>
 
 ![frontend ui](ScreanShot/carPaking_ScreanShot.png)
