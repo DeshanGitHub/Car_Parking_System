@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="dashBoardWindowContext" prefHeight="640.0" prefWidth="946.0" style="-fx-background-color: #273c75;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <AnchorPane fx:id="context" layoutX="346.0" prefHeight="640.0" prefWidth="609.0" style="-fx-background-color: #bdc3c7;">
+         <children>
+            <Label layoutX="34.0" layoutY="130.0" prefHeight="120.0" prefWidth="542.0" text="Welcome To &quot;Saman Rice&quot;">
+               <font>
+                  <Font name="System Bold Italic" size="43.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="204.0" prefHeight="110.0" prefWidth="404.0" text="Car Parking System">
+               <font>
+                  <Font name="System Bold Italic" size="43.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="302.0" prefHeight="36.0" prefWidth="513.0" text="(Sri Lankan Rice Suppliers and Manufacturers)">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="373.0" prefHeight="27.0" prefWidth="379.0" text="Welcome to &quot;Saman Rice&quot; Car Parking System.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="400.0" prefHeight="27.0" prefWidth="196.0" text="Please Select You want..">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="6.0" layoutY="241.0" prefHeight="83.0" prefWidth="337.0" style="-fx-background-color: #7f8fa6;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="102.0" layoutY="10.0" onAction="#openParkingWindowOnAction" prefHeight="64.0" prefWidth="221.0" style="-fx-background-color: #ffdd59;" text="Parking">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-parking-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="6.0" layoutY="359.0" prefHeight="83.0" prefWidth="337.0" style="-fx-background-color: #7f8fa6;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="102.0" layoutY="10.0" onAction="#openOnDeliveryShiftWindowOnAction" prefHeight="64.0" prefWidth="221.0" style="-fx-background-color: #32ff7e;" text="On Delivery Shift">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-car-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="104.0" layoutY="575.0" onAction="#openManagementLoginFormOnAction" prefHeight="40.0" prefWidth="202.0" style="-fx-border-color: white;" text="Management Log In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="21.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-security-user-male-100.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="80.0" layoutY="553.0" prefHeight="3.0" prefWidth="250.0" />
+      <ImageView fitHeight="141.0" fitWidth="152.0" layoutX="104.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-garage-100.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="loginPageContext" layoutX="208.0" layoutY="143.0" prefHeight="344.0" prefWidth="533.0" style="-fx-background-color: #273c75;">
+         <children>
+            <ImageView fitHeight="118.0" fitWidth="122.0" layoutX="227.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-male-user-96.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="53.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="53.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtUserName" layoutX="202.0" layoutY="160.0" prefHeight="31.0" prefWidth="268.0" />
+            <JFXButton fx:id="cancelButton" buttonType="RAISED" layoutX="202.0" layoutY="278.0" onAction="#cancelManagementLoginFormOnAction" prefHeight="40.0" prefWidth="111.0" style="-fx-background-color: #b2bec3;" text="Cancel">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="logInButton" buttonType="RAISED" layoutX="359.0" layoutY="278.0" onAction="#openManagementDashBoardFormOnAction" prefHeight="40.0" prefWidth="111.0" style="-fx-background-color: #74b9ff;" text="Log In">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <PasswordField fx:id="txtPassword" layoutX="202.0" layoutY="217.0" prefHeight="31.0" prefWidth="268.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
